@@ -29,7 +29,7 @@ function StyledPrevArrow(props) {
   );
 }
 
-  const Carousel = () => {
+  const CarouselHotCollections = () => {
 
     const [data, setData] = useState([]);
     const [loading, setLoading] = useState(true);
@@ -95,9 +95,11 @@ function StyledPrevArrow(props) {
       <div>
         <Slider {...settings}>
           {loading ? ( 
-            new Array(4).fill(6).map((element, index) => (
+            new Array(6).fill(0).map((element, index) => (
               <div key={index}>
-                <div className="nft_coll" style={{marginLeft: "10px"}}>
+                <div className="nft_coll" 
+                style={{marginLeft: "10px"}}
+                >
                   <div className="nft_wrap">
                     <Link to={`/item-details/${element.nftId}`}>
                       <div className="skeleton-box" style={{width: "100%", height: "100%"}}></div>
@@ -151,7 +153,7 @@ function StyledPrevArrow(props) {
     );
   };
 
-export default Carousel
-
+export default CarouselHotCollections
+ 
   
 
