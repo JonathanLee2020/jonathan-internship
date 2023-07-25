@@ -61,6 +61,7 @@ const AuthorItems = ({nftCollectionArray, authorImage}) => {
                     <div className="nft__item_like">
                       <i className="fa fa-heart"></i>
                       <span>{element.likes}</span>
+                      {/* accidently pushed data meant for jonathan-item-details to jonathan-author */}
                     </div>
                   </div>
                 </div>
