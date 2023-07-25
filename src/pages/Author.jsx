@@ -21,7 +21,6 @@ const Author = () => {
           `https://us-central1-nft-cloud-functions.cloudfunctions.net/authors?author=${authorId}`
         ).then((response) => {
           setAuthor(response.data);
-          console.log(author)
           setLoading(false);
         }).catch((error) => {
           console.log(error)
@@ -29,7 +28,6 @@ const Author = () => {
       }
       fetchData();
     }, []);
-    console.log(`authorlikes is ${author.followers}, it is a ${typeof author.followers}`)
 
   return (
     <div id="wrapper">

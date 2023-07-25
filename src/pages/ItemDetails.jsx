@@ -21,8 +21,6 @@ const ItemDetails = (props) => {
     }
     getData();
   }, []);
-  console.log(fin)
-
 
 
   return (
@@ -131,7 +129,6 @@ const ItemDetails = (props) => {
                     doloremque laudantium, totam rem aperiam, eaque ipsa quae ab
                     illo inventore veritatis et quasi architecto beatae vitae
                     dicta sunt explicabo.
-                    HELLO GAMERS I AM THE GAMER
                   </p>
                   <div className="d-flex flex-row">
                     <div className="mr40">

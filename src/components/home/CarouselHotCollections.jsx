@@ -90,7 +90,6 @@ function StyledPrevArrow(props) {
         },
       ],
     };
-    console.log(data)
 
     return (
       <div>
