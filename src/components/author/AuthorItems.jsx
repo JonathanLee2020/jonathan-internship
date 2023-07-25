@@ -4,6 +4,7 @@ import AuthorImage from "../../images/author_thumbnail.jpg";
 import nftImage from "../../images/nftImage.jpg";
 
 const AuthorItems = ({nftCollectionArray, authorImage}) => {
+  console.log(nftCollectionArray)
   return (
     <div className="de_tab_content">
       <div className="tab-1">
@@ -45,7 +46,7 @@ const AuthorItems = ({nftCollectionArray, authorImage}) => {
                         </div>
                       </div>
                     </div>
-                    <Link to="/item-details">
+                    <Link to={`/item-details/${element.nftId}`}>
                       <img
                         src={element.nftImage}
                         className="lazy nft__item_preview"
