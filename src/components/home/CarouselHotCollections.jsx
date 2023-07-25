@@ -93,10 +93,13 @@ function StyledPrevArrow(props) {
 
     return (
       <div>
-        <Slider {...settings}>
+        <Slider {...settings} 
+        data-aos="fade-in" 
+        data-aos-once="true"
+        data-aos-duration="800">
           {loading ? ( 
             new Array(6).fill(0).map((element, index) => (
-              <div key={index}>
+              <div key={index} >
                 <div className="nft_coll" 
                 style={{marginLeft: "10px"}}
                 >
