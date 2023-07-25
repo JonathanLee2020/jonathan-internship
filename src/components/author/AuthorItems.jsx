@@ -4,7 +4,6 @@ import AuthorImage from "../../images/author_thumbnail.jpg";
 import nftImage from "../../images/nftImage.jpg";
 
 const AuthorItems = ({nftCollectionArray, authorImage}) => {
-  console.log(nftCollectionArray)
   return (
     <div className="de_tab_content">
       <div className="tab-1">
